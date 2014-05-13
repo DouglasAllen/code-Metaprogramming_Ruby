@@ -1,0 +1,27 @@
+#---
+# Excerpted from "Metaprogramming Ruby: Program Like the Ruby Pros",
+# published by The Pragmatic Bookshelf.
+# Copyrights apply to this code. It may not be used to create training material, 
+# courses, books, articles, and the like. Contact us if you are in doubt.
+# We make no guarantees that this code is fit for any purpose. 
+# Visit http://www.pragmaticprogrammer.com/titles/ppmetr for more book information.
+#---
+require File.dirname(__FILE__) + '/../../spec_helper.rb'
+
+module BugReport496
+  class BaseClass
+  end
+
+  class SubClass < BaseClass
+  end
+
+  describe "a message expectation on a base class object" do
+    it "should correctly pick up message sent to it subclass" do
+      pending("fix for http://rspec.lighthouseapp.com/projects/5645/tickets/496") do
+        BaseClass.should_receive(:new).once
+        SubClass.new
+      end
+    end
+  end
+end
+

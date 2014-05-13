@@ -1,0 +1,28 @@
+#---
+# Excerpted from "Metaprogramming Ruby: Program Like the Ruby Pros",
+# published by The Pragmatic Bookshelf.
+# Copyrights apply to this code. It may not be used to create training material, 
+# courses, books, articles, and the like. Contact us if you are in doubt.
+# We make no guarantees that this code is fit for any purpose. 
+# Visit http://www.pragmaticprogrammer.com/titles/ppmetr for more book information.
+#---
+require 'capistrano/recipes/deploy/strategy/remote'
+
+module Capistrano
+  module Deploy
+    module Strategy
+
+      # Implements the deployment strategy which does an SCM checkout on each
+      # target host. This is the default deployment strategy for Capistrano.
+      class Checkout < Remote
+        protected
+
+          # Returns the SCM's checkout command for the revision to deploy.
+          def command
+            @command ||= source.checkout(revision, configuration[:release_path])
+          end
+      end
+
+    end
+  end
+end
