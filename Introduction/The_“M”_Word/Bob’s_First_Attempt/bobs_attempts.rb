@@ -6,6 +6,8 @@
 # We make no guarantees that this code is fit for any purpose. 
 # Visit http://www.pragmaticprogrammer.com/titles/ppmetr for more book information.
 # http://media.pragprog.com/titles/ppmetr/code/introduction/orm.rb ---
+#---
+
 # Mock database
 # (it prints the SQL and returns an empty result set)
 class Database

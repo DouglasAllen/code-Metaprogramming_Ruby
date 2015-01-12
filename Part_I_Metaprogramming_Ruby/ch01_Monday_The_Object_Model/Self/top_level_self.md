@@ -1,3 +1,4 @@
+```ruby
 # top_level_self.rb
 
 x = 1  
@@ -17,3 +18,4 @@ end
 puts self
 puts self.class
   
+```

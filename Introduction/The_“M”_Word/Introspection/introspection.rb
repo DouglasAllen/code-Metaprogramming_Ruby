@@ -6,6 +6,7 @@
 # We make no guarantees that this code is fit for any purpose. 
 # Visit http://www.pragmaticprogrammer.com/titles/ppmetr for more book information.
 # http://media.pragprog.com/titles/ppmetr/code/introduction/introspection.rb ---
+
 class Greeting
 
   def initialize(text)
