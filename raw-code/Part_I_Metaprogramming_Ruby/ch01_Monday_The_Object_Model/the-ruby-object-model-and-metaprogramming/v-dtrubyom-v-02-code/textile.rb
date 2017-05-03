@@ -5,9 +5,9 @@ class Formatter
   def initialize(text)
     @text = text
   end
-  
+
   def to_html
-    fail "We need to be subclassed to create HTML"
+    raise 'We need to be subclassed to create HTML'
   end
 end
 
@@ -17,5 +17,5 @@ class TextileFormatter < Formatter
   end
 end
 
-t = TextileFormatter.new("*strong* coffee(tm)")
+t = TextileFormatter.new('*strong* coffee(tm)')
 puts t.to_html

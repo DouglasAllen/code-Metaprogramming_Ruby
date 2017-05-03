@@ -4,6 +4,6 @@ Person = Struct.new(:name, :likes) do
   end
 end
 
-dave = Person.new("dave", "ruby")
+dave = Person.new("Dave", "Ruby")
 
 puts dave
