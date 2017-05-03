@@ -1,11 +1,8 @@
 code-Metaprogramming_Ruby
 =========================
 
-Code arranged by chapters in the raw.
+Code arranged by chapters of the book https://pragprog.com/book/ppmetr/metaprogramming-ruby 
 
-Markdown can be made by modifying the practicing ruby rakefile to convert it.
 
-Note: I had an awefull time with BOR code because of indentation. He had tabs up as far as
-VS would go.
 
 Enjoy!
