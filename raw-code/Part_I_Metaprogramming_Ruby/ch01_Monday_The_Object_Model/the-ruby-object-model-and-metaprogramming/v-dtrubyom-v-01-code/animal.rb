@@ -5,3 +5,7 @@ def animal.speak
 end
 
 animal.speak
+
+other = animal.clone
+
+other.speak
